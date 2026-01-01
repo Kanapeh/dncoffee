@@ -3,10 +3,12 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,6 +35,7 @@ export default function Header() {
     { name: 'Home', href: '/', icon: '🏠' },
     { name: 'About', href: '/about', icon: '📖' },
     { name: 'Menu', href: '/#menu', icon: '☕' },
+    { name: 'Blog', href: '/blog', icon: '📝' },
     { name: 'Process', href: '/#process', icon: '🔥' },
     { name: 'Contact', href: '/contact', icon: '📞' },
   ];
@@ -74,7 +77,10 @@ export default function Header() {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
               {navItems.map((item, index) => {
-                const isActive = activeSection === item.href.replace('#', '').replace('/', '') || (item.href === '/' && activeSection === 'home');
+                // Check if current page matches the nav item
+                const isPageActive = pathname === item.href || (item.href === '/' && pathname === '/');
+                const isAnchorActive = !isPageActive && item.href.startsWith('/#') && activeSection === item.href.replace('/#', '');
+                const isActive = isPageActive || isAnchorActive;
                 const isPageLink = item.href.startsWith('/') && !item.href.startsWith('/#');
                 
                 const navContent = (
