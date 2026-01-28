@@ -14,15 +14,15 @@ export default function AboutPage() {
         <div className="container-custom px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
             {/* Breadcrumb */}
-            <div className="flex items-center justify-center gap-2 text-[#6B6B6B] text-xs md:text-sm lg:text-base mb-4 md:mb-6" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              <a href="/" className="hover:text-[#2C1810] transition-colors">Home</a>
+            <div className="flex items-center justify-center gap-2 text-[#6B6B6B] text-xs md:text-sm lg:text-base mb-4 md:mb-6" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+              <a href="/" className="hover:text-[#2C1810] transition-colors">خانه</a>
               <span>/</span>
-              <span className="text-[#2C1810]">About Us</span>
+              <span className="text-[#2C1810]">درباره ما</span>
             </div>
             
             {/* Main Heading */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-[#2C1810] mb-4 leading-tight px-4" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-              About <span className="text-[#8B6F47]" style={{ fontFamily: 'var(--font-cormorant), serif', fontWeight: 400 }}>Us</span>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-[#2C1810] mb-4 leading-tight px-4" style={{ fontFamily: 'Vazirmatn, serif' }}>
+              <span className="text-[#8B6F47]">درباره</span> ما
             </h1>
           </div>
         </div>
@@ -38,11 +38,11 @@ export default function AboutPage() {
               <div className="bg-[#F8F8F8] rounded-xl md:rounded-2xl p-5 md:p-8 shadow-lg relative z-10">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
                   <div className="flex-1">
-                    <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2C1810] mb-2" style={{ fontFamily: 'var(--font-playfair), serif' }}>
+                    <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2C1810] mb-2" style={{ fontFamily: 'Vazirmatn, serif' }}>
                       30,000+
                     </h3>
-                    <p className="text-[#6B6B6B] text-xs md:text-sm lg:text-base leading-relaxed" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                      Sales in July 2021 with 5 star ratings and happy clients.
+                    <p className="text-[#6B6B6B] text-xs md:text-sm lg:text-base leading-relaxed" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                      فروش در جولای 2021 با امتیاز 5 ستاره و مشتریان راضی.
                     </p>
                   </div>
                   <div className="w-10 h-10 md:w-12 md:h-12 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -80,8 +80,8 @@ export default function AboutPage() {
 
               {/* Ratings */}
               <div className="pt-2 md:pt-4">
-                <p className="text-[#2C1810] font-semibold mb-2 md:mb-3 text-xs md:text-sm" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                  Best ratings
+                <p className="text-[#2C1810] font-semibold mb-2 md:mb-3 text-xs md:text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                  بهترین امتیازات
                 </p>
                 <div className="flex gap-1 md:gap-2">
                   <span className="text-xl md:text-2xl">😊</span>
@@ -97,36 +97,36 @@ export default function AboutPage() {
             <div className="space-y-6 md:space-y-8 order-1 lg:order-2">
               {/* Sub-heading */}
               <div>
-                <p className="text-[#6B6B6B] text-xs md:text-sm uppercase tracking-wider mb-2 md:mb-3" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                  A BIT
+                <p className="text-[#6B6B6B] text-xs md:text-sm mb-2 md:mb-3" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                  کمی
                 </p>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#2C1810] mb-4 md:mb-6 uppercase leading-tight" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                  ABOUT US
+                <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#2C1810] mb-4 md:mb-6 leading-tight" style={{ fontFamily: 'Vazirmatn, serif' }}>
+                  درباره ما
                 </h2>
               </div>
 
               {/* Description Text */}
               <div className="space-y-4 md:space-y-6">
-                <p className="text-[#6B6B6B] leading-relaxed text-sm md:text-base lg:text-lg" style={{ fontFamily: 'var(--font-inter), sans-serif', lineHeight: '1.7' }}>
-                  At D/N Coffee, we believe coffee is more than a drink — it's a rhythm that moves with your day and stays with your night.
+                <p className="text-[#6B6B6B] leading-relaxed text-sm md:text-base lg:text-lg" style={{ fontFamily: 'Vazirmatn, sans-serif', lineHeight: '1.7' }}>
+                  در D/N Coffee، ما معتقدیم که قهوه چیزی بیش از یک نوشیدنی است — ریتمی است که با روز شما حرکت می‌کند و در شب شما می‌ماند.
                 </p>
                 
-                <p className="text-[#6B6B6B] leading-relaxed text-sm md:text-base lg:text-lg" style={{ fontFamily: 'var(--font-inter), sans-serif', lineHeight: '1.7' }}>
-                  Born from years behind the bar and a deep respect for specialty coffee, D/N Coffee is a small, independent brand focused on bottled coffee crafted with intention. We work with carefully selected specialty beans and brew in small batches to preserve clarity, balance, and character in every bottle.
+                <p className="text-[#6B6B6B] leading-relaxed text-sm md:text-base lg:text-lg" style={{ fontFamily: 'Vazirmatn, sans-serif', lineHeight: '1.7' }}>
+                  متولد شده از سال‌ها تجربه پشت بار و احترام عمیق به قهوه تخصصی، D/N Coffee یک برند کوچک و مستقل است که بر روی قهوه بطری شده با نیت و هدف متمرکز است. ما با دانه‌های قهوه تخصصی با دقت انتخاب شده کار می‌کنیم و در دسته‌های کوچک دم می‌کنیم تا وضوح، تعادل و شخصیت را در هر بطری حفظ کنیم.
                 </p>
 
-                <p className="text-[#6B6B6B] leading-relaxed text-sm md:text-base lg:text-lg" style={{ fontFamily: 'var(--font-inter), sans-serif', lineHeight: '1.7' }}>
-                  From bright mornings to long nights, our coffees are designed to fit naturally into real life — whether you're starting your day, slowing down, or staying awake when it matters most.
+                <p className="text-[#6B6B6B] leading-relaxed text-sm md:text-base lg:text-lg" style={{ fontFamily: 'Vazirmatn, sans-serif', lineHeight: '1.7' }}>
+                  از صبح‌های روشن تا شب‌های طولانی، قهوه‌های ما طراحی شده‌اند تا به طور طبیعی در زندگی واقعی شما جای بگیرند — چه روز خود را شروع می‌کنید، آرام می‌شوید، یا زمانی که بیشترین اهمیت را دارد بیدار می‌مانید.
                 </p>
               </div>
 
               {/* Approach Highlight */}
               <div className="bg-[#F5F1E8] rounded-xl md:rounded-2xl p-5 md:p-6 lg:p-8 border-l-4 border-[#8B6F47]">
-                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-[#2C1810] mb-2 md:mb-3" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                  Our approach is simple:
+                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-[#2C1810] mb-2 md:mb-3" style={{ fontFamily: 'Vazirmatn, serif' }}>
+                  رویکرد ما ساده است:
                 </h3>
-                <p className="text-[#6B6B6B] leading-relaxed font-semibold text-sm md:text-base lg:text-lg" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                  no shortcuts, no mass production, no compromises on quality.
+                <p className="text-[#6B6B6B] leading-relaxed font-semibold text-sm md:text-base lg:text-lg" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                  بدون میانبر، بدون تولید انبوه، بدون سازش در کیفیت.
                 </p>
               </div>
 
@@ -134,10 +134,10 @@ export default function AboutPage() {
               <div className="pt-2 md:pt-4">
                 <a
                   href="/#menu"
-                  className="inline-block w-full sm:w-auto text-center px-5 md:px-6 py-2 md:py-2.5 bg-gradient-to-r from-[#8B6F47] to-[#6B5A47] text-white rounded-lg md:rounded-xl font-semibold text-xs md:text-sm uppercase tracking-wider shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300"
-                  style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+                  className="inline-block w-full sm:w-auto text-center px-5 md:px-6 py-2 md:py-2.5 bg-gradient-to-r from-[#8B6F47] to-[#6B5A47] text-white rounded-lg md:rounded-xl font-semibold text-xs md:text-sm shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300"
+                  style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                 >
-                  Explore More
+                  بیشتر بدانید
                 </a>
               </div>
             </div>
@@ -151,11 +151,11 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block mb-6 md:mb-8">
               <div className="w-16 md:w-24 h-0.5 md:h-1 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] mx-auto mb-4 md:mb-6"></div>
-              <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#2C1810] mb-3 md:mb-4 leading-tight px-4" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                Brewed for Day & Night.
+              <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#2C1810] mb-3 md:mb-4 leading-tight px-4" style={{ fontFamily: 'Vazirmatn, serif' }}>
+                دم‌آوری شده برای روز و شب.
               </p>
-              <p className="text-lg md:text-xl lg:text-2xl text-[#8B6F47] font-medium px-4" style={{ fontFamily: 'var(--font-cormorant), serif' }}>
-                From bean to bottle, every detail matters.
+              <p className="text-lg md:text-xl lg:text-2xl text-[#8B6F47] font-medium px-4" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                از دانه تا بطری، هر جزئیات مهم است.
               </p>
             </div>
           </div>
@@ -193,12 +193,12 @@ export default function AboutPage() {
                 </div>
               </div>
               
-              <h3 className="text-lg md:text-2xl font-bold" style={{ fontFamily: 'var(--font-playfair), serif', marginBottom: '20px' }}>
+              <h3 className="text-lg md:text-2xl font-bold" style={{ fontFamily: 'Vazirmatn, serif', marginBottom: '20px' }}>
                 D/N COFFEE
               </h3>
               
-              <p className="text-white/70 leading-relaxed text-xs md:text-sm" style={{ fontFamily: 'var(--font-inter), sans-serif', marginBottom: '32px' }}>
-                Premium coffee experience. Roasted in Sweden, brewed in Tehran.
+              <p className="text-white/70 leading-relaxed text-xs md:text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif', marginBottom: '32px' }}>
+                تجربه قهوه DN Coffee. برشته شده در سوئد، دم‌آوری شده در تهران.
               </p>
 
               {/* Social Media */}
@@ -228,8 +228,8 @@ export default function AboutPage() {
 
             {/* Quick Links */}
             <div>
-              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                Quick Links
+              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'Vazirmatn, serif' }}>
+                لینک‌های سریع
                 <div className="absolute -bottom-2 left-0 w-8 md:w-12 h-0.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37]"></div>
               </h4>
               <ul className="space-y-2 md:space-y-3 mt-4 md:mt-6">
@@ -237,36 +237,40 @@ export default function AboutPage() {
                   <a 
                     href="/" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Home</span>
+                    <span>خانه</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="/about" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>About</span>
+                    <span>درباره ما</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="/#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Menu</span>
+                    <span>منو</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="/#process" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Process</span>
+                    <span>فرآیند</span>
                   </a>
                 </li>
               </ul>
@@ -274,8 +278,8 @@ export default function AboutPage() {
 
             {/* Coffee Types */}
             <div>
-              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                Coffee Types
+              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'Vazirmatn, serif' }}>
+                انواع قهوه
                 <div className="absolute -bottom-2 left-0 w-8 md:w-12 h-0.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37]"></div>
               </h4>
               <ul className="space-y-2 md:space-y-3 mt-4 md:mt-6">
@@ -283,36 +287,40 @@ export default function AboutPage() {
                   <a 
                     href="/#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Cold Brew</span>
+                    <span>کلد برو</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="/#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Drip Coffee</span>
+                    <span>قهوه چکنده</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="/#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Espresso</span>
+                    <span>اسپرسو</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="/#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Specialty</span>
+                    <span>ویژه</span>
                   </a>
                 </li>
               </ul>
@@ -320,28 +328,28 @@ export default function AboutPage() {
 
             {/* Contact */}
             <div className="col-span-2 md:col-span-1">
-              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                Contact
+              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'Vazirmatn, serif' }}>
+                تماس
                 <div className="absolute -bottom-2 left-0 w-8 md:w-12 h-0.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37]"></div>
               </h4>
               <ul className="space-y-3 md:space-y-4 mt-4 md:mt-6">
-                <li className="flex items-start gap-3 text-white/70">
+                <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">📍</span>
-                  <span>Tehran, Iran</span>
+                  <span>تهران، ایران</span>
                 </li>
-                <li className="flex items-start gap-3 text-white/70">
+                <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">📞</span>
                   <a href="tel:+989027380949" className="hover:text-white transition-colors">+98 902 738 0949</a>
                 </li>
-                <li className="flex items-start gap-3 text-white/70">
+                <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">💬</span>
                   <a href="https://wa.me/989027380949" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">در واتساپ</a>
                 </li>
-                <li className="flex items-start gap-3 text-white/70">
+                <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">📧</span>
                   <a href="mailto:hellodncoffe@gmail.com" className="hover:text-white transition-colors">hellodncoffe@gmail.com</a>
                 </li>
-                <li className="flex items-start gap-3 text-white/70">
+                <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">🌐</span>
                   <a href="https://dncoffee.cafe" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">dncoffee.cafe</a>
                 </li>
@@ -352,15 +360,15 @@ export default function AboutPage() {
           {/* Bottom Bar */}
           <div className="border-t border-white/10 pt-6 md:pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
-              <p className="text-white/50 text-xs md:text-sm text-center md:text-left" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                ©2024 D/N Coffee. All Rights Reserved.
+              <p className="text-white/50 text-xs md:text-sm text-center md:text-left" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                ©2024 D/N Coffee. تمامی حقوق محفوظ است.
               </p>
-              <div className="flex items-center gap-2 text-white/50 text-xs md:text-sm">
+              <div className="flex items-center gap-2 text-white/50 text-xs md:text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                 <span className="text-[#8B6F47]">🇸🇪</span>
-                <span>Roasted in Sweden</span>
+                <span>برشته شده در سوئد</span>
                 <span className="text-white/30">•</span>
                 <span className="text-[#8B6F47]">☕</span>
-                <span>Brewed in Tehran</span>
+                <span>دم‌آوری شده در تهران</span>
               </div>
             </div>
           </div>

@@ -35,18 +35,18 @@ export default function ContactPage() {
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             {/* Breadcrumb */}
-            <div className="flex items-center justify-center gap-2 text-white/60 text-sm md:text-base mb-6" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              <a href="/" className="hover:text-white transition-colors">Home</a>
+            <div className="flex items-center justify-center gap-2 text-white/60 text-sm md:text-base mb-6" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+              <a href="/" className="hover:text-white transition-colors">خانه</a>
               <span>/</span>
-              <span className="text-white">Contact</span>
+              <span className="text-white">تماس</span>
             </div>
             
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 leading-tight" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-              Get In <span className="text-[#D4AF37]" style={{ fontFamily: 'var(--font-cormorant), serif', fontWeight: 400 }}>Touch</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 leading-tight" style={{ fontFamily: 'Vazirmatn, serif' }}>
+              <span className="text-[#D4AF37]">تماس</span> با ما
             </h1>
-            <p className="text-white/70 text-base md:text-lg max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            <p className="text-white/70 text-base md:text-lg max-w-2xl mx-auto" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+              خوشحال می‌شویم از شما بشنویم. پیام خود را برای ما ارسال کنید و ما در اسرع وقت پاسخ خواهیم داد.
             </p>
           </div>
         </div>
@@ -61,16 +61,16 @@ export default function ContactPage() {
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-6 md:p-8 shadow-xl">
                 {/* Form Header */}
                 <div className="mb-6">
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-1" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                    Send Us a Message
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-1" style={{ fontFamily: 'Vazirmatn, serif' }}>
+                    ارسال پیام
                   </h3>
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                   {/* Name Field */}
                   <div>
-                    <label htmlFor="name" className="block text-white/70 mb-1.5 text-sm" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                      Full Name
+                    <label htmlFor="name" className="block text-white/70 mb-1.5 text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                      نام کامل
                     </label>
                     <input
                       type="text"
@@ -78,17 +78,17 @@ export default function ContactPage() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Your name"
+                      placeholder="نام شما"
                       className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder:text-white/40 focus:outline-none focus:border-[#D4AF37] focus:bg-white/10 transition-all duration-300"
-                      style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+                      style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                       required
                     />
                   </div>
 
                   {/* Email Field */}
                   <div>
-                    <label htmlFor="email" className="block text-white/70 mb-1.5 text-sm" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                      Email
+                    <label htmlFor="email" className="block text-white/70 mb-1.5 text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                      ایمیل
                     </label>
                     <input
                       type="email"
@@ -96,17 +96,17 @@ export default function ContactPage() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="your@email.com"
+                      placeholder="ایمیل شما"
                       className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder:text-white/40 focus:outline-none focus:border-[#D4AF37] focus:bg-white/10 transition-all duration-300"
-                      style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+                      style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                       required
                     />
                   </div>
 
                   {/* Subject Field */}
                   <div>
-                    <label htmlFor="subject" className="block text-white/70 mb-1.5 text-sm" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                      Subject
+                    <label htmlFor="subject" className="block text-white/70 mb-1.5 text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                      موضوع
                     </label>
                     <input
                       type="text"
@@ -114,27 +114,27 @@ export default function ContactPage() {
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      placeholder="Subject"
+                      placeholder="موضوع پیام"
                       className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder:text-white/40 focus:outline-none focus:border-[#D4AF37] focus:bg-white/10 transition-all duration-300"
-                      style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+                      style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                       required
                     />
                   </div>
 
                   {/* Message Field */}
                   <div>
-                    <label htmlFor="message" className="block text-white/70 mb-1.5 text-sm" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                      Message
+                    <label htmlFor="message" className="block text-white/70 mb-1.5 text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                      پیام
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Your message"
+                      placeholder="پیام شما"
                       rows={5}
                       className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder:text-white/40 focus:outline-none focus:border-[#D4AF37] focus:bg-white/10 transition-all duration-300 resize-none"
-                      style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+                      style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                       required
                     ></textarea>
                   </div>
@@ -163,8 +163,8 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <p className="text-white/60 text-xs mb-1.5 font-medium uppercase tracking-wide" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>Phone</p>
-                    <a href="tel:+989027380949" className="text-white font-semibold text-base hover:text-[#D4AF37] transition-colors block" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+                    <p className="text-white/60 text-xs mb-1.5 font-medium" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>تلفن</p>
+                    <a href="tel:+989027380949" className="text-white font-semibold text-base hover:text-[#D4AF37] transition-colors block" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                       +98 902 738 0949
                     </a>
                   </div>
@@ -178,8 +178,8 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <p className="text-white/60 text-xs mb-1.5 font-medium uppercase tracking-wide" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>Email</p>
-                    <a href="mailto:hellodncoffe@gmail.com" className="text-white font-semibold text-base hover:text-[#D4AF37] transition-colors break-all block" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+                    <p className="text-white/60 text-xs mb-1.5 font-medium" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>ایمیل</p>
+                    <a href="mailto:hellodncoffe@gmail.com" className="text-white font-semibold text-base hover:text-[#D4AF37] transition-colors break-all block" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                       hellodncoffe@gmail.com
                     </a>
                   </div>
@@ -193,9 +193,9 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <p className="text-white/60 text-xs mb-1.5 font-medium uppercase tracking-wide" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>WhatsApp</p>
-                    <a href="https://wa.me/989027380949" target="_blank" rel="noopener noreferrer" className="text-white font-semibold text-base hover:text-[#D4AF37] transition-colors block" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                      +98 902 738 0949
+                    <p className="text-white/60 text-xs mb-1.5 font-medium" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>واتساپ</p>
+                    <a href="https://wa.me/989027380949" target="_blank" rel="noopener noreferrer" className="text-white font-semibold text-base hover:text-[#D4AF37] transition-colors block" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                      در واتساپ
                     </a>
                   </div>
                 </div>
@@ -209,9 +209,9 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <p className="text-white/60 text-xs mb-1.5 font-medium uppercase tracking-wide" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>Location</p>
-                    <p className="text-white font-semibold text-base" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                      Tehran, Iran
+                    <p className="text-white/60 text-xs mb-1.5 font-medium" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>موقعیت</p>
+                    <p className="text-white font-semibold text-base" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                      تهران، ایران
                     </p>
                   </div>
                 </div>
@@ -239,18 +239,18 @@ export default function ContactPage() {
       <section className="section-padding relative overflow-hidden">
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-8 md:p-12">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 leading-tight" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-              Ready to Experience <span className="text-[#D4AF37]" style={{ fontFamily: 'var(--font-cormorant), serif', fontWeight: 400 }}>Premium Coffee?</span>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 leading-tight" style={{ fontFamily: 'Vazirmatn, serif' }}>
+              آماده تجربه <span className="text-[#D4AF37]">قهوه DN Coffee</span> هستید؟
             </h2>
-            <p className="text-white/70 text-base md:text-lg mb-8 max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              Explore our menu and discover the perfect blend for your taste
+            <p className="text-white/70 text-base md:text-lg mb-8 max-w-2xl mx-auto" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+              منوی ما را کاوش کنید و ترکیب مناسب برای ذائقه خود را پیدا کنید
             </p>
             <a
               href="/#menu"
               className="inline-block px-6 py-2.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] text-white font-semibold text-sm rounded-lg hover:from-[#D4AF37] hover:to-[#8B6F47] transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#D4AF37]/30 transform hover:scale-105"
               style={{ fontFamily: 'Vazirmatn, sans-serif' }}
             >
-              View Menu
+              مشاهده منو
             </a>
           </div>
         </div>
@@ -281,12 +281,12 @@ export default function ContactPage() {
                 </div>
               </div>
               
-              <h3 className="text-lg md:text-2xl font-bold mb-4" style={{ fontFamily: 'var(--font-playfair), serif' }}>
+              <h3 className="text-lg md:text-2xl font-bold mb-4" style={{ fontFamily: 'Vazirmatn, serif' }}>
                 D/N COFFEE
               </h3>
               
-              <p className="text-white/70 leading-relaxed text-xs md:text-sm mb-6" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                Premium coffee experience. Roasted in Sweden, brewed in Tehran.
+              <p className="text-white/70 leading-relaxed text-xs md:text-sm mb-6" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                تجربه قهوه DN Coffee. برشته شده در سوئد، دم‌آوری شده در تهران.
               </p>
 
               {/* Social Media */}
@@ -316,8 +316,8 @@ export default function ContactPage() {
 
             {/* Quick Links */}
             <div>
-              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                Our Store
+              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'Vazirmatn, serif' }}>
+                فروشگاه ما
                 <div className="absolute -bottom-2 left-0 w-8 md:w-12 h-0.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37]"></div>
               </h4>
               <ul className="space-y-2 md:space-y-3 mt-4 md:mt-6">
@@ -325,36 +325,40 @@ export default function ContactPage() {
                   <a 
                     href="/" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Home</span>
+                    <span>خانه</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="/about" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>About</span>
+                    <span>درباره ما</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="/#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Service</span>
+                    <span>خدمات</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="/contact" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Contact</span>
+                    <span>تماس</span>
                   </a>
                 </li>
               </ul>
@@ -362,8 +366,8 @@ export default function ContactPage() {
 
             {/* Coffee Types */}
             <div>
-              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                Coffee Types
+              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'Vazirmatn, serif' }}>
+                انواع قهوه
                 <div className="absolute -bottom-2 left-0 w-8 md:w-12 h-0.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37]"></div>
               </h4>
               <ul className="space-y-2 md:space-y-3 mt-4 md:mt-6">
@@ -371,36 +375,40 @@ export default function ContactPage() {
                   <a 
                     href="/#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Cold Brew</span>
+                    <span>کلد برو</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="/#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Drip Coffee</span>
+                    <span>قهوه چکنده</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="/#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Espresso</span>
+                    <span>اسپرسو</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="/#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Specialty</span>
+                    <span>ویژه</span>
                   </a>
                 </li>
               </ul>
@@ -408,21 +416,21 @@ export default function ContactPage() {
 
             {/* Contact */}
             <div className="col-span-2 md:col-span-1">
-              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                Get In Touch
+              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'Vazirmatn, serif' }}>
+                تماس با ما
                 <div className="absolute -bottom-2 left-0 w-8 md:w-12 h-0.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37]"></div>
               </h4>
               <ul className="space-y-3 md:space-y-4 mt-4 md:mt-6">
-                <li className="text-white/70 text-sm" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                  Tehran, Iran
+                <li className="text-white/70 text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                  تهران، ایران
                 </li>
-                <li className="text-white/70 text-sm" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+                <li className="text-white/70 text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <a href="tel:+989027380949" className="hover:text-white transition-colors">+98 902 738 0949</a>
                 </li>
-                <li className="text-white/70 text-sm" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                  <a href="https://wa.me/989027380949" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">00989027380949</a>
+                <li className="text-white/70 text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                  <a href="https://wa.me/989027380949" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">در واتساپ</a>
                 </li>
-                <li className="text-white/70 text-sm" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+                <li className="text-white/70 text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <a href="mailto:hellodncoffe@gmail.com" className="hover:text-white transition-colors">hellodncoffe@gmail.com</a>
                 </li>
               </ul>
@@ -432,15 +440,15 @@ export default function ContactPage() {
           {/* Bottom Bar */}
           <div className="border-t border-white/10 pt-6 md:pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
-              <p className="text-white/50 text-xs md:text-sm text-center md:text-left" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                Copyright © 2024 D/N Coffee | Powered by D/N Coffee
+              <p className="text-white/50 text-xs md:text-sm text-center md:text-left" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                کپی‌رایت © 2024 D/N Coffee | طراحی شده توسط D/N Coffee
               </p>
-              <div className="flex items-center gap-2 text-white/50 text-xs md:text-sm">
+              <div className="flex items-center gap-2 text-white/50 text-xs md:text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                 <span className="text-[#8B6F47]">🇸🇪</span>
-                <span>Roasted in Sweden</span>
+                <span>برشته شده در سوئد</span>
                 <span className="text-white/30">•</span>
                 <span className="text-[#8B6F47]">☕</span>
-                <span>Brewed in Tehran</span>
+                <span>دم‌آوری شده در تهران</span>
               </div>
             </div>
           </div>
