@@ -142,10 +142,10 @@ export default function ContactPage() {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full py-3 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] text-white font-semibold rounded-lg hover:from-[#D4AF37] hover:to-[#8B6F47] transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#D4AF37]/30 mt-2"
-                    style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+                    className="w-full py-2.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] text-white font-semibold text-sm rounded-lg hover:from-[#D4AF37] hover:to-[#8B6F47] transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#D4AF37]/30 mt-2"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
-                    Send Message
+                    ارسال پیام
                   </button>
                 </form>
               </div>
@@ -179,8 +179,8 @@ export default function ContactPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-white/60 text-xs mb-1.5 font-medium uppercase tracking-wide" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>Email</p>
-                    <a href="mailto:info@dncoffee.cafe" className="text-white font-semibold text-base hover:text-[#D4AF37] transition-colors break-all block" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                      info@dncoffee.cafe
+                    <a href="mailto:hellodncoffe@gmail.com" className="text-white font-semibold text-base hover:text-[#D4AF37] transition-colors break-all block" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+                      hellodncoffe@gmail.com
                     </a>
                   </div>
                 </div>
@@ -247,8 +247,8 @@ export default function ContactPage() {
             </p>
             <a
               href="/#menu"
-              className="inline-block px-8 py-3.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] text-white font-semibold rounded-lg hover:from-[#D4AF37] hover:to-[#8B6F47] transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#D4AF37]/30 transform hover:scale-105"
-              style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+              className="inline-block px-6 py-2.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] text-white font-semibold text-sm rounded-lg hover:from-[#D4AF37] hover:to-[#8B6F47] transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#D4AF37]/30 transform hover:scale-105"
+              style={{ fontFamily: 'Vazirmatn, sans-serif' }}
             >
               View Menu
             </a>
@@ -423,7 +423,7 @@ export default function ContactPage() {
                   <a href="https://wa.me/989027380949" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">00989027380949</a>
                 </li>
                 <li className="text-white/70 text-sm" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                  <a href="mailto:info@dncoffee.cafe" className="hover:text-white transition-colors">info@dncoffee.cafe</a>
+                  <a href="mailto:hellodncoffe@gmail.com" className="hover:text-white transition-colors">hellodncoffe@gmail.com</a>
                 </li>
               </ul>
             </div>

@@ -136,10 +136,10 @@ export default function CartPage() {
                     />
                     <button
                       onClick={handleApplyPromo}
-                      className="px-6 py-3 bg-gradient-to-r from-[#8B6F47] to-[#2C3E50] text-white rounded-xl font-semibold hover:from-[#2C3E50] hover:to-[#8B6F47] transition-all"
-                      style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+                      className="px-5 py-2 bg-gradient-to-r from-[#8B6F47] to-[#2C3E50] text-white rounded-xl font-semibold text-sm hover:from-[#2C3E50] hover:to-[#8B6F47] transition-all"
+                      style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                     >
-                      Apply
+                      اعمال
                     </button>
                   </div>
                   {appliedPromo && (
@@ -170,8 +170,8 @@ export default function CartPage() {
                   <span className="text-4xl font-bold gradient-text" style={{ fontFamily: 'var(--font-playfair), serif' }}>${total.toFixed(2)}</span>
                 </div>
 
-                <button className="w-full py-5 bg-gradient-to-r from-[#8B6F47] to-[#2C3E50] text-white rounded-xl font-bold text-lg hover:from-[#2C3E50] hover:to-[#8B6F47] transition-all transform hover:scale-105 shadow-lg" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                  Proceed to Checkout
+                <button className="w-full py-3 bg-gradient-to-r from-[#8B6F47] to-[#2C3E50] text-white rounded-xl font-semibold text-sm hover:from-[#2C3E50] hover:to-[#8B6F47] transition-all transform hover:scale-105 shadow-lg" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                  ادامه به پرداخت
                 </button>
               </div>
             </div>

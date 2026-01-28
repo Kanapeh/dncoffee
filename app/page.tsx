@@ -7,7 +7,7 @@ import BottomNav from './components/BottomNav';
 export default function Home() {
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#2C3038] via-[#1e2329] to-[#1a1f2e] pb-20 md:pb-0">
+    <div dir="rtl" className="min-h-screen bg-gradient-to-br from-[#2C3038] via-[#1e2329] to-[#1a1f2e] pb-20 md:pb-0">
       <Header />
       
       {/* Hero Section */}
@@ -15,39 +15,41 @@ export default function Home() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center space-y-12">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 text-sm text-[#D4AF37] font-medium">
+            <div className="inline-flex items-center gap-2 text-sm text-[#D4AF37] font-medium" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
               <span>🇸🇪</span>
-              <span>Roasted in Sweden</span>
+              <span>برشته شده در سوئد</span>
               <span className="text-white/30">•</span>
               <span>☕</span>
-              <span>Brewed in Tehran</span>
+              <span>دم‌آوری شده در تهران</span>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-              Premium Coffee
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight" style={{ fontFamily: 'Vazirmatn, serif' }}>
+              قهوه <span className="text-[#D4AF37]">ممتاز</span>
               <br />
-              <span className="text-[#D4AF37]" style={{ fontFamily: 'var(--font-cormorant), serif', fontWeight: 400 }}>Crafted with Passion</span>
+              <span className="text-[#D4AF37]" style={{ fontFamily: 'Vazirmatn, serif', fontWeight: 400 }}>ساخته شده با اشتیاق</span>
             </h1>
 
             {/* Description */}
-            <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto">
-              Experience the perfect blend of Swedish roasting excellence and Persian brewing artistry.
+            <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+              تجربه ترکیب بی‌نظیر برشته‌کاری سوئدی و هنر دم‌آوری ایرانی
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <a 
                 href="#menu" 
-                className="px-8 py-3 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] text-white rounded-lg font-semibold hover:from-[#D4AF37] hover:to-[#8B6F47] transition-all duration-300 shadow-lg"
+                className="px-6 py-2.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] text-white rounded-lg font-semibold text-sm hover:from-[#D4AF37] hover:to-[#8B6F47] transition-all duration-300 shadow-lg"
+                style={{ fontFamily: 'Vazirmatn, sans-serif' }}
               >
-                Explore Menu
+                مشاهده منو
               </a>
               <a 
                 href="#about" 
-                className="px-8 py-3 border-2 border-white/30 text-white rounded-lg font-semibold hover:bg-white/10 hover:border-white/50 transition-all duration-300"
+                className="px-6 py-2.5 border-2 border-white/30 text-white rounded-lg font-semibold text-sm hover:bg-white/10 hover:border-white/50 transition-all duration-300"
+                style={{ fontFamily: 'Vazirmatn, sans-serif' }}
               >
-                Our Story
+                داستان ما
               </a>
             </div>
           </div>
@@ -63,7 +65,7 @@ export default function Home() {
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/How to Choose the Best Central American Coffee Beans for Your Palate.jpeg"
-                  alt="Premium Coffee Beans"
+                  alt="دانه‌های قهوه ممتاز"
                   fill
                   className="object-cover"
                 />
@@ -74,30 +76,30 @@ export default function Home() {
             {/* Right - Content */}
             <div className="space-y-6 px-4 lg:px-8">
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                  Our <span className="text-[#D4AF37]" style={{ fontFamily: 'var(--font-cormorant), serif', fontWeight: 400 }}>Story</span>
+                <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'Vazirmatn, serif' }}>
+                  <span className="text-[#D4AF37]">داستان</span> ما
                 </h2>
                 <div className="w-20 h-1 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] mb-8"></div>
               </div>
               
               <div className="space-y-6">
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl border-l-4 border-[#8B6F47]" style={{ padding: '40px 36px' }}>
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl border-r-4 border-[#8B6F47]" style={{ padding: '40px 36px' }}>
                   <div className="flex items-center gap-3 mb-5">
                     <span className="text-3xl">🇸🇪</span>
-                    <h3 className="text-xl font-bold text-white">Roasted in Sweden</h3>
+                    <h3 className="text-xl font-bold text-white" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>برشته شده در سوئد</h3>
                   </div>
-                  <p className="text-white/80 leading-relaxed" style={{ paddingLeft: '12px', paddingRight: '8px' }}>
-                    Our premium coffee beans are carefully roasted in Sweden using traditional Scandinavian techniques. This meticulous process brings out unique flavors and aromas, creating the perfect foundation for exceptional coffee.
+                  <p className="text-white/80 leading-relaxed" style={{ paddingLeft: '8px', paddingRight: '12px', fontFamily: 'Vazirmatn, sans-serif' }}>
+                    دانه‌های قهوه ممتاز ما با دقت در سوئد و با استفاده از تکنیک‌های سنتی اسکاندیناوی برشته می‌شوند. این فرآیند دقیق طعم‌ها و عطرهای منحصر به فردی را نمایان می‌کند و پایه‌ای کامل برای قهوه استثنایی ایجاد می‌کند.
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-r from-[#8B6F47]/20 to-[#D4AF37]/20 backdrop-blur-sm rounded-2xl border-l-4 border-[#D4AF37] text-white" style={{ padding: '40px 36px' }}>
+                <div className="bg-gradient-to-r from-[#8B6F47]/20 to-[#D4AF37]/20 backdrop-blur-sm rounded-2xl border-r-4 border-[#D4AF37] text-white" style={{ padding: '40px 36px' }}>
                   <div className="flex items-center gap-3 mb-5">
                     <span className="text-3xl">☕</span>
-                    <h3 className="text-xl font-bold">Brewed in Tehran</h3>
+                    <h3 className="text-xl font-bold" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>دم‌آوری شده در تهران</h3>
                   </div>
-                  <p className="text-white/90 leading-relaxed" style={{ paddingLeft: '12px', paddingRight: '8px' }}>
-                    Every cup is expertly brewed in our Tehran location, where our skilled baristas combine Swedish-roasted beans with precision brewing methods. From cold brew to drip coffee, each preparation is crafted with care and passion.
+                  <p className="text-white/90 leading-relaxed" style={{ paddingLeft: '8px', paddingRight: '12px', fontFamily: 'Vazirmatn, sans-serif' }}>
+                    هر فنجان با مهارت در محل ما در تهران دم می‌آید، جایی که باریستاهای ماهر ما دانه‌های برشته شده سوئدی را با روش‌های دقیق دم‌آوری ترکیب می‌کنند. از کلد برو تا قهوه چکنده، هر آماده‌سازی با دقت و اشتیاق ساخته می‌شود.
                   </p>
                 </div>
               </div>
@@ -110,11 +112,11 @@ export default function Home() {
       <section id="menu" className="section-padding bg-gradient-to-br from-[#2C3038] via-[#1e2329] to-[#1a1f2e]">
         <div className="container-custom">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-              Our <span className="text-[#D4AF37]" style={{ fontFamily: 'var(--font-cormorant), serif', fontWeight: 400 }}>Menu</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'Vazirmatn, serif' }}>
+              <span className="text-[#D4AF37]">منو</span> ما
             </h2>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              Discover our carefully crafted coffee selection
+            <p className="text-xl text-white/80 max-w-2xl mx-auto" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+              مجموعه قهوه‌های منتخب ما را کشف کنید
             </p>
           </div>
 
@@ -122,17 +124,17 @@ export default function Home() {
             {/* Left Column - Menu Items */}
             <div className="space-y-6">
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-6 md:p-8 shadow-xl">
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 pb-4 border-b border-white/10" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                  Cold Brew
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 pb-4 border-b border-white/10" style={{ fontFamily: 'Vazirmatn, serif' }}>
+                  کلد برو
                 </h3>
                 
                 <div className="space-y-5">
                   {[
-                    { name: 'Classic Cold Brew', price: 250000, description: 'Smooth and refreshing' },
-                    { name: 'Cold Brew Latte', price: 330000, description: 'Creamy and balanced' },
-                    { name: 'Cold Foam Cold Brew', price: 330000, description: 'Rich with velvety foam' },
-                    { name: 'Cold Brew Mocha', price: 330000, description: 'Chocolatey and indulgent' },
-                    { name: 'Cold Brew Caramel Latte', price: 330000, description: 'Sweet caramel delight' },
+                    { name: 'کلد برو کلاسیک', price: 250000, description: 'نرم و خنک' },
+                    { name: 'کلد برو لاته', price: 330000, description: 'خامه‌ای و متعادل' },
+                    { name: 'کلد برو فوم', price: 330000, description: 'غنی با فوم مخملی' },
+                    { name: 'کلد برو موکا', price: 330000, description: 'شکلاتی و لذیذ' },
+                    { name: 'کلد برو کارامل لاته', price: 330000, description: 'لذت کارامل شیرین' },
                   ].map((item, itemIndex) => {
                     const formatPrice = (price: number) => {
                       return new Intl.NumberFormat('fa-IR').format(price);
@@ -141,15 +143,15 @@ export default function Home() {
                       <div key={itemIndex} className="group">
                         <div className="flex items-start justify-between gap-4 mb-1">
                           <div className="flex-1">
-                            <h4 className="text-lg md:text-xl font-semibold text-white mb-1 group-hover:text-[#D4AF37] transition-colors" style={{ fontFamily: 'var(--font-playfair), serif' }}>
+                            <h4 className="text-lg md:text-xl font-semibold text-white mb-1 group-hover:text-[#D4AF37] transition-colors" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                               {item.name}
                             </h4>
-                            <p className="text-white/60 text-sm" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+                            <p className="text-white/60 text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                               {item.description}
                             </p>
                           </div>
-                          <div className="text-right">
-                            <span className="text-xl md:text-2xl font-bold text-[#D4AF37]" style={{ fontFamily: 'var(--font-playfair), serif' }}>
+                          <div className="text-left">
+                            <span className="text-xl md:text-2xl font-bold text-[#D4AF37]" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                               {formatPrice(item.price)}
                             </span>
                             <span className="text-sm text-white/50 mr-1">تومان</span>
@@ -166,8 +168,8 @@ export default function Home() {
 
               {/* Plant-based Note */}
               <div className="bg-gradient-to-r from-[#8B6F47]/20 to-[#D4AF37]/20 backdrop-blur-sm rounded-xl border border-[#D4AF37]/30 p-5">
-                <p className="text-white/90 text-center text-sm md:text-base" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                  <span className="text-[#D4AF37] font-semibold">✨</span> تمامی شیر ها صدرصد گیاهی هستند
+                <p className="text-white/90 text-center text-sm md:text-base" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                  <span className="text-[#D4AF37] font-semibold">✨</span> تمامی شیرها صددرصد گیاهی هستند
                 </p>
               </div>
             </div>
@@ -178,7 +180,7 @@ export default function Home() {
                 <div className="relative w-full" style={{ paddingBottom: '133%' }}>
                   <Image
                     src="/images/menu.jpeg"
-                    alt="D/N Coffee Menu"
+                    alt="منوی D/N Coffee"
                     fill
                     className="object-contain bg-white/5 p-4"
                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -194,11 +196,11 @@ export default function Home() {
       <section id="process" className="section-padding bg-gradient-to-br from-[#1a1f2e] via-[#1e2329] to-[#2C3038] text-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              The <span className="text-[#D4AF37]">Art</span> of Coffee
+            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: 'Vazirmatn, serif' }}>
+              <span className="text-[#D4AF37]">هنر</span> قهوه
             </h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
-              From bean to cup, every step is carefully crafted to perfection
+            <p className="text-xl text-white/70 max-w-2xl mx-auto" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+              از دانه تا فنجان، هر مرحله با دقت به کمال ساخته می‌شود
             </p>
           </div>
 
@@ -206,24 +208,24 @@ export default function Home() {
             {[
               {
                 icon: '🌱',
-                title: 'Sourcing',
-                description: 'We select the finest coffee beans from around the world, ensuring quality and sustainability.'
+                title: 'انتخاب دانه',
+                description: 'ما بهترین دانه‌های قهوه را از سراسر جهان انتخاب می‌کنیم و کیفیت و پایداری را تضمین می‌کنیم.'
               },
               {
                 icon: '🔥',
-                title: 'Roasting',
-                description: 'In Sweden, our master roasters use traditional techniques to bring out unique flavors and aromas.'
+                title: 'برشته‌کاری',
+                description: 'در سوئد، برشته‌کاران استاد ما از تکنیک‌های سنتی استفاده می‌کنند تا طعم‌ها و عطرهای منحصر به فرد را نمایان کنند.'
               },
               {
                 icon: '☕',
-                title: 'Brewing',
-                description: 'In Tehran, our expert baristas brew each cup with precision, from cold brew to drip coffee.'
+                title: 'دم‌آوری',
+                description: 'در تهران، باریستاهای متخصص ما هر فنجان را با دقت دم می‌آورند، از کلد برو تا قهوه چکنده.'
               },
             ].map((step, index) => (
               <div key={index} className="text-center p-8 bg-white/5 rounded-2xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all">
                 <div className="text-6xl mb-6">{step.icon}</div>
-                <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
-                <p className="text-white/80 leading-relaxed">{step.description}</p>
+                <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>{step.title}</h3>
+                <p className="text-white/80 leading-relaxed" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>{step.description}</p>
               </div>
             ))}
           </div>
@@ -234,63 +236,63 @@ export default function Home() {
       <section id="testimonials" className="section-padding bg-gradient-to-br from-[#2C3038] via-[#1e2329] to-[#1a1f2e]">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-              What Our <span className="text-[#D4AF37]" style={{ fontFamily: 'var(--font-cormorant), serif', fontWeight: 400 }}>Customers Say</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'Vazirmatn, serif' }}>
+              نظرات <span className="text-[#D4AF37]">مشتریان</span> ما
             </h2>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              Real experiences from coffee lovers who trust our quality
+            <p className="text-xl text-white/80 max-w-2xl mx-auto" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+              تجربیات واقعی از عاشقان قهوه که به کیفیت ما اعتماد دارند
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: 'Sarah Johnson',
-                role: 'Coffee Enthusiast',
+                name: 'سارا جوهری',
+                role: 'علاقه‌مند به قهوه',
                 image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80',
                 rating: 5,
-                text: 'The best coffee I\'ve ever tasted! The Swedish roasting brings out such unique flavors. Every morning starts perfectly with D/N Coffee.',
-                location: 'Tehran, Iran'
+                text: 'بهترین قهوه‌ای که تا به حال چشیده‌ام! برشته‌کاری سوئدی طعم‌های منحصر به فردی را نمایان می‌کند. هر صبح با D/N Coffee به بهترین شکل شروع می‌شود.',
+                location: 'تهران، ایران'
               },
               {
-                name: 'Marcus Andersson',
-                role: 'Barista',
+                name: 'مارکوس اندرسون',
+                role: 'باریستا',
                 image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80',
                 rating: 5,
-                text: 'As a professional barista, I can truly appreciate the quality. The cold brew is exceptional - smooth, rich, and perfectly balanced.',
-                location: 'Stockholm, Sweden'
+                text: 'به عنوان یک باریستای حرفه‌ای، می‌توانم واقعاً کیفیت را درک کنم. کلد برو استثنایی است - نرم، غنی و کاملاً متعادل.',
+                location: 'استکهلم، سوئد'
               },
               {
-                name: 'Layla Mohammadi',
-                role: 'Daily Coffee Drinker',
+                name: 'لیلا محمدی',
+                role: 'نوشنده روزانه قهوه',
                 image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80',
                 rating: 5,
-                text: 'I love how fresh every cup tastes. The combination of Swedish roasting and Tehran brewing creates something truly special. Highly recommended!',
-                location: 'Tehran, Iran'
+                text: 'دوست دارم که هر فنجان چقدر تازه مزه می‌دهد. ترکیب برشته‌کاری سوئدی و دم‌آوری تهران چیزی واقعاً خاص ایجاد می‌کند. بسیار توصیه می‌شود!',
+                location: 'تهران، ایران'
               },
               {
-                name: 'David Chen',
-                role: 'Coffee Blogger',
+                name: 'داوید چن',
+                role: 'بلاگر قهوه',
                 image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80',
                 rating: 5,
-                text: 'I\'ve tried coffee from all over the world, and D/N Coffee stands out. The attention to detail in both roasting and brewing is remarkable.',
-                location: 'New York, USA'
+                text: 'قهوه از سراسر جهان را امتحان کرده‌ام و D/N Coffee برجسته است. توجه به جزئیات در هر دو برشته‌کاری و دم‌آوری قابل توجه است.',
+                location: 'نیویورک، آمریکا'
               },
               {
-                name: 'Emma Wilson',
-                role: 'Café Owner',
+                name: 'اما ویلسون',
+                role: 'صاحب کافه',
                 image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80',
                 rating: 5,
-                text: 'We serve D/N Coffee in our café and our customers can\'t get enough. The drip coffee is particularly popular - smooth and aromatic.',
-                location: 'London, UK'
+                text: 'ما D/N Coffee را در کافه خود سرو می‌کنیم و مشتریان ما نمی‌توانند به اندازه کافی از آن استفاده کنند. قهوه چکنده به خصوص محبوب است - نرم و معطر.',
+                location: 'لندن، انگلستان'
               },
               {
-                name: 'Amir Rezaei',
-                role: 'Coffee Connoisseur',
+                name: 'امیر رضایی',
+                role: 'متخصص قهوه',
                 image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&q=80',
                 rating: 5,
-                text: 'The perfect blend of tradition and quality. Every sip tells a story of craftsmanship. This is what premium coffee should taste like.',
-                location: 'Tehran, Iran'
+                text: 'ترکیب بی‌نظیر سنت و کیفیت. هر جرعه داستانی از استادی را روایت می‌کند. این همان چیزی است که قهوه ممتاز باید مزه بدهد.',
+                location: 'تهران، ایران'
               }
             ].map((testimonial, index) => (
               <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl shadow-lg border border-white/10 hover:bg-white/15 hover:shadow-xl transition-all duration-300 hover:-translate-y-2" style={{ padding: '40px 36px' }}>
@@ -304,7 +306,7 @@ export default function Home() {
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="text-white/90 leading-relaxed mb-6 text-base" style={{ paddingLeft: '8px', paddingRight: '8px' }}>
+                <p className="text-white/90 leading-relaxed mb-6 text-base" style={{ paddingLeft: '8px', paddingRight: '8px', fontFamily: 'Vazirmatn, sans-serif' }}>
                   "{testimonial.text}"
                 </p>
 
@@ -326,9 +328,9 @@ export default function Home() {
                     />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-white mb-1">{testimonial.name}</h4>
-                    <p className="text-sm text-[#D4AF37] font-medium mb-1">{testimonial.role}</p>
-                    <p className="text-xs text-white/60">{testimonial.location}</p>
+                    <h4 className="font-bold text-white mb-1" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>{testimonial.name}</h4>
+                    <p className="text-sm text-[#D4AF37] font-medium mb-1" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>{testimonial.role}</p>
+                    <p className="text-xs text-white/60" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>{testimonial.location}</p>
                   </div>
                 </div>
               </div>
@@ -341,11 +343,11 @@ export default function Home() {
       <section className="section-padding bg-gradient-to-br from-[#1a1f2e] via-[#1e2329] to-[#2C3038]">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-              Coffee <span className="text-[#D4AF37]" style={{ fontFamily: 'var(--font-cormorant), serif', fontWeight: 400 }}>Gallery</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'Vazirmatn, serif' }}>
+              گالری <span className="text-[#D4AF37]">قهوه</span>
             </h2>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              A glimpse into our coffee journey
+            <p className="text-xl text-white/80 max-w-2xl mx-auto" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+              نگاهی به سفر قهوه ما
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -362,7 +364,7 @@ export default function Home() {
               <div key={index} className="relative aspect-square rounded-2xl overflow-hidden group cursor-pointer">
                 <Image
                   src={src}
-                  alt={`Coffee ${index + 1}`}
+                  alt={`قهوه ${index + 1}`}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -397,19 +399,19 @@ export default function Home() {
                 <div className="relative w-full h-full rounded-full overflow-hidden bg-white/5 backdrop-blur-sm p-3 shadow-2xl group-hover:shadow-[#8B6F47]/30 group-hover:scale-105 transition-all duration-500">
                   <Image
                     src="/images/lll.JPG"
-                    alt="D/N COFFEE Logo"
+                    alt="لوگوی D/N COFFEE"
                     fill
                     className="object-contain p-2"
                   />
                 </div>
               </div>
               
-              <h3 className="text-lg md:text-2xl font-bold" style={{ fontFamily: 'var(--font-playfair), serif', marginBottom: '20px' }}>
+              <h3 className="text-lg md:text-2xl font-bold" style={{ fontFamily: 'Vazirmatn, serif', marginBottom: '20px' }}>
                 D/N COFFEE
               </h3>
               
-              <p className="text-white/70 leading-relaxed text-xs md:text-sm" style={{ fontFamily: 'var(--font-inter), sans-serif', marginBottom: '32px' }}>
-                Premium coffee experience. Roasted in Sweden, brewed in Tehran.
+              <p className="text-white/70 leading-relaxed text-xs md:text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif', marginBottom: '32px' }}>
+                تجربه قهوه ممتاز. برشته شده در سوئد، دم‌آوری شده در تهران.
               </p>
 
               {/* Social Media */}
@@ -439,45 +441,49 @@ export default function Home() {
 
             {/* Quick Links */}
             <div>
-              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                Quick Links
-                <div className="absolute -bottom-2 left-0 w-8 md:w-12 h-0.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37]"></div>
+              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                لینک‌های سریع
+                <div className="absolute -bottom-2 right-0 w-8 md:w-12 h-0.5 bg-gradient-to-l from-[#8B6F47] to-[#D4AF37]"></div>
               </h4>
               <ul className="space-y-2 md:space-y-3 mt-4 md:mt-6">
                 <li>
                   <a 
                     href="#home" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Home</span>
+                    <span>خانه</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="#about" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>About</span>
+                    <span>درباره</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Menu</span>
+                    <span>منو</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="#process" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Process</span>
+                    <span>فرآیند</span>
                   </a>
                 </li>
               </ul>
@@ -485,45 +491,49 @@ export default function Home() {
 
             {/* Coffee Types */}
             <div>
-              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                Coffee Types
-                <div className="absolute -bottom-2 left-0 w-8 md:w-12 h-0.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37]"></div>
+              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                انواع قهوه
+                <div className="absolute -bottom-2 right-0 w-8 md:w-12 h-0.5 bg-gradient-to-l from-[#8B6F47] to-[#D4AF37]"></div>
               </h4>
               <ul className="space-y-2 md:space-y-3 mt-4 md:mt-6">
                 <li>
                   <a 
                     href="#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Cold Brew</span>
+                    <span>کلد برو</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Drip Coffee</span>
+                    <span>قهوه چکنده</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Espresso</span>
+                    <span>اسپرسو</span>
                   </a>
                 </li>
                 <li>
                   <a 
                     href="#menu" 
                     className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+                    style={{ fontFamily: 'Vazirmatn, sans-serif' }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <span>Specialty</span>
+                    <span>تخصصی</span>
                   </a>
                 </li>
               </ul>
@@ -531,28 +541,28 @@ export default function Home() {
 
             {/* Contact */}
             <div className="col-span-2 md:col-span-1">
-              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'var(--font-playfair), serif' }}>
-                Contact
-                <div className="absolute -bottom-2 left-0 w-8 md:w-12 h-0.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37]"></div>
+              <h4 className="font-bold mb-4 md:mb-6 text-base md:text-lg relative inline-block" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                تماس با ما
+                <div className="absolute -bottom-2 right-0 w-8 md:w-12 h-0.5 bg-gradient-to-l from-[#8B6F47] to-[#D4AF37]"></div>
               </h4>
               <ul className="space-y-3 md:space-y-4 mt-4 md:mt-6">
-                <li className="flex items-start gap-3 text-white/70">
+                <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">📍</span>
-                  <span>Tehran, Iran</span>
+                  <span>تهران، ایران</span>
                 </li>
-                <li className="flex items-start gap-3 text-white/70">
+                <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">📞</span>
                   <a href="tel:+989027380949" className="hover:text-white transition-colors">+98 902 738 0949</a>
                 </li>
-                <li className="flex items-start gap-3 text-white/70">
+                <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">💬</span>
-                  <a href="https://wa.me/989027380949" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp Business</a>
+                  <a href="https://wa.me/989027380949" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">در واتساپ</a>
                 </li>
-                <li className="flex items-start gap-3 text-white/70">
+                <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">📧</span>
-                  <a href="mailto:info@dncoffee.cafe" className="hover:text-white transition-colors">info@dncoffee.cafe</a>
+                  <a href="mailto:hellodncoffe@gmail.com" className="hover:text-white transition-colors">hellodncoffe@gmail.com</a>
                 </li>
-                <li className="flex items-start gap-3 text-white/70">
+                <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">🌐</span>
                   <a href="https://dncoffee.cafe" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">dncoffee.cafe</a>
                 </li>
@@ -563,15 +573,15 @@ export default function Home() {
           {/* Bottom Bar */}
           <div className="border-t border-white/10 pt-6 md:pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
-              <p className="text-white/50 text-xs md:text-sm text-center md:text-left" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                ©2024 D/N Coffee. All Rights Reserved.
+              <p className="text-white/50 text-xs md:text-sm text-center md:text-right" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                ©2025 D/N Coffee. تمام حقوق محفوظ است.
               </p>
-              <div className="flex items-center gap-2 text-white/50 text-xs md:text-sm">
+              <div className="flex items-center gap-2 text-white/50 text-xs md:text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                 <span className="text-[#8B6F47]">🇸🇪</span>
-                <span>Roasted in Sweden</span>
+                <span>برشته شده در سوئد</span>
                 <span className="text-white/30">•</span>
                 <span className="text-[#8B6F47]">☕</span>
-                <span>Brewed in Tehran</span>
+                <span>دم‌آوری شده در تهران</span>
               </div>
             </div>
           </div>

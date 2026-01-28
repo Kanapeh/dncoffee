@@ -25,16 +25,17 @@ body {
   background: var(--coffee-white);
   color: var(--text-dark);
   overflow-x: hidden;
-  line-height: 1.7;
-  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.8;
+  font-family: 'Vazirmatn', Tahoma, Arial, sans-serif;
+  direction: rtl;
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-playfair), serif;
+  font-family: 'Vazirmatn', Tahoma, Arial, sans-serif;
   font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  line-height: 1.8;
+  letter-spacing: 0;
 }
 
 /* Elegant headings */
@@ -202,10 +203,10 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
   background: var(--coffee-dark);
   color: var(--coffee-white);
-  padding: 16px 36px;
+  padding: 12px 28px;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 13px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   cursor: pointer;
@@ -223,10 +224,10 @@ h1, h2, h3, h4, h5, h6 {
 .btn-secondary {
   background: transparent;
   color: var(--coffee-dark);
-  padding: 16px 36px;
+  padding: 12px 28px;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 13px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border: 2px solid var(--coffee-dark);
   cursor: pointer;

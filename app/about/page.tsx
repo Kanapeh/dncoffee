@@ -134,7 +134,7 @@ export default function AboutPage() {
               <div className="pt-2 md:pt-4">
                 <a
                   href="/#menu"
-                  className="inline-block w-full sm:w-auto text-center px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-[#8B6F47] to-[#6B5A47] text-white rounded-lg md:rounded-xl font-bold text-sm md:text-base uppercase tracking-wider shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300"
+                  className="inline-block w-full sm:w-auto text-center px-5 md:px-6 py-2 md:py-2.5 bg-gradient-to-r from-[#8B6F47] to-[#6B5A47] text-white rounded-lg md:rounded-xl font-semibold text-xs md:text-sm uppercase tracking-wider shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300"
                   style={{ fontFamily: 'var(--font-inter), sans-serif' }}
                 >
                   Explore More
@@ -335,11 +335,11 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start gap-3 text-white/70">
                   <span className="text-[#8B6F47] mt-1">💬</span>
-                  <a href="https://wa.me/989027380949" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp Business</a>
+                  <a href="https://wa.me/989027380949" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">در واتساپ</a>
                 </li>
                 <li className="flex items-start gap-3 text-white/70">
                   <span className="text-[#8B6F47] mt-1">📧</span>
-                  <a href="mailto:info@dncoffee.cafe" className="hover:text-white transition-colors">info@dncoffee.cafe</a>
+                  <a href="mailto:hellodncoffe@gmail.com" className="hover:text-white transition-colors">hellodncoffe@gmail.com</a>
                 </li>
                 <li className="flex items-start gap-3 text-white/70">
                   <span className="text-[#8B6F47] mt-1">🌐</span>

@@ -125,9 +125,10 @@ export default function SignupPage() {
 
               <button
                 type="submit"
-                className="w-full py-3 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] text-white font-semibold rounded-lg hover:from-[#D4AF37] hover:to-[#8B6F47] transition-all duration-300 shadow-lg"
+                className="w-full py-2.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] text-white font-semibold text-sm rounded-lg hover:from-[#D4AF37] hover:to-[#8B6F47] transition-all duration-300 shadow-lg"
+                style={{ fontFamily: 'Vazirmatn, sans-serif' }}
               >
-                Create Account
+                ایجاد حساب کاربری
               </button>
 
               <div className="text-center text-sm text-white/70">
