@@ -218,97 +218,99 @@ export default function BlogPage() {
   ];
 
   return (
-    <div dir="rtl" className="min-h-screen bg-gradient-to-br from-[#2C3038] via-[#1e2329] to-[#1a1f2e] pb-20 md:pb-0">
+    <div dir="rtl" className="min-h-screen bg-gradient-to-b from-[#1a1f2e] via-[#1e2329] to-[#1a1f2e] pb-20 md:pb-0">
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-20 md:pt-32 pb-12 md:pb-20 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden">
         <div className="container-custom relative z-10 px-4 md:px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Breadcrumb */}
-            <div className="flex items-center justify-center gap-2 text-white/60 text-xs md:text-base mb-6 md:mb-8" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              <span className="text-white">بلاگ</span>
-              <span>/</span>
-              <Link href="/" className="hover:text-white transition-colors">خانه</Link>
+          <div className="max-w-3xl mx-auto text-center">
+            {/* Breadcrumb - Minimal */}
+            <div className="flex items-center justify-center gap-2 text-white/50 text-xs md:text-sm mb-8 md:mb-10" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+              <Link href="/" className="hover:text-white/80 transition-colors">خانه</Link>
+              <span className="text-white/30">/</span>
+              <span className="text-white/80">بلاگ</span>
             </div>
             
-            {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight px-2" style={{ fontFamily: 'var(--font-playfair), serif' }}>
+            {/* Main Heading - Cleaner */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5 md:mb-6 leading-tight" style={{ fontFamily: 'var(--font-playfair), serif' }}>
               <span className="text-[#D4AF37]" style={{ fontFamily: 'var(--font-cormorant), serif', fontWeight: 400 }}>بلاگ</span> قهوه
             </h1>
-            <p className="text-white/70 text-base md:text-lg lg:text-xl max-w-2xl mx-auto px-4 leading-relaxed" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+            <p className="text-white/60 text-sm md:text-base lg:text-lg max-w-xl mx-auto leading-relaxed" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
               کشف دنیای قهوه تخصصی از طریق مقالات و راهنماهای ما
             </p>
             
-            {/* Decorative Element */}
-            <div className="mt-8 md:mt-12 flex items-center justify-center gap-2">
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#D4AF37]"></div>
-              <div className="w-2 h-2 rounded-full bg-[#D4AF37]"></div>
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#D4AF37]"></div>
+            {/* Minimal Decorative Element */}
+            <div className="mt-10 md:mt-12 flex items-center justify-center">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent via-[#D4AF37]/50 to-transparent"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Articles Grid */}
-      <section className="pb-96 md:pb-24 px-12 md:px-16 lg:px-18">
+      <section className="pb-96 md:pb-24 px-4 md:px-8 lg:px-12">
         <div className="container-custom">
           {/* Section Header */}
-          <div className="mb-8 md:mb-12 text-center">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-playfair), serif' }}>
+          <div className="mb-12 md:mb-16 text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-playfair), serif' }}>
               مقالات <span className="text-[#D4AF37]">ما</span>
             </h2>
-            <p className="text-white/60 text-sm md:text-base max-w-xl mx-auto" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+            <p className="text-white/50 text-sm md:text-base max-w-xl mx-auto" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
               مجموعه‌ای از مقالات تخصصی درباره قهوه
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {articles.map((article) => (
               <Link
                 key={article.id}
                 href={`/blog/${article.id}`}
-                className="group bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-[#D4AF37]/20 hover:border-[#D4AF37]/50 transition-all duration-500 hover:-translate-y-2"
+                className="group bg-white/[0.02] backdrop-blur-md rounded-xl border border-white/[0.08] overflow-hidden transition-all duration-300 hover:bg-white/[0.04] hover:border-white/15 hover:shadow-xl hover:shadow-black/10"
               >
                 {/* Article Image */}
-                <div className="relative aspect-[4/3] overflow-hidden">
+                <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-white/5 to-white/0">
                   <Image
                     src={article.image}
                     alt={article.title}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1.5 bg-[#D4AF37]/95 text-white text-xs font-semibold rounded-full shadow-lg backdrop-blur-sm">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent"></div>
+                  
+                  {/* Category Badge - Minimal */}
+                  <div className="absolute top-4 right-4">
+                    <span className="px-3 py-1.5 bg-[#D4AF37]/85 backdrop-blur-md text-white text-[10px] md:text-xs font-medium rounded-lg shadow-lg">
                       {article.category}
                     </span>
                   </div>
-                  {/* Overlay on hover */}
-                  <div className="absolute inset-0 bg-[#D4AF37]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
 
                 {/* Article Content */}
-                <div className="px-10 py-4 md:px-7 md:py-10 lg:px-18 lg:py-6">
-                  <div className="flex items-center gap-8 text-white/50 text-[10px] md:text-xs mb-3 md:mb-4 px-1" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                <div className="p-5 md:p-6 space-y-4">
+                  {/* Date */}
+                  <div className="flex items-center gap-2 text-white/40 text-xs" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                     <span>{new Date(article.date).toLocaleDateString('fa-IR')}</span>
                   </div>
                   
-                  <h2 className="text-base md:text-lg lg:text-xl font-bold text-white mb-3 md:mb-4 group-hover:text-[#D4AF37] transition-colors duration-300 leading-snug px-1" style={{ fontFamily: 'var(--font-playfair), serif' }}>
+                  {/* Title */}
+                  <h2 className="text-lg md:text-xl font-bold text-white group-hover:text-[#D4AF37] transition-colors duration-300 leading-tight line-clamp-2" style={{ fontFamily: 'var(--font-playfair), serif' }}>
                     {article.title}
                   </h2>
                   
-                  <p className="text-white/70 text-xs md:text-sm leading-relaxed mb-4 md:mb-5 line-clamp-3 px-1" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+                  {/* Excerpt */}
+                  <p className="text-white/60 text-sm leading-relaxed line-clamp-2" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
                     {article.excerpt}
                   </p>
 
-                  <div className="flex items-center gap-5 text-[#D4AF37] text-xs md:text-sm font-semibold group-hover:gap-3 transition-all duration-300 px-1">
+                  {/* Read More - Minimal */}
+                  <div className="flex items-center gap-2 text-[#D4AF37] text-xs font-medium pt-2">
                     <span>ادامه مطلب</span>
-                    <svg className="w-5 h-6 md:w-4 md:h-8 transform group-hover:-translate-x-1 transition-transform duration-300 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 transform group-hover:-translate-x-1 transition-transform duration-300 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
                   </div>
