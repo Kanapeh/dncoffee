@@ -25,7 +25,7 @@ export default function Home() {
 
             {/* Main Heading */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight" style={{ fontFamily: 'Vazirmatn, serif' }}>
-              قهوه <span className="text-[#D4AF37]">ممتاز</span>
+              قهوه <span className="text-[#D4AF37]">DN Coffee</span>
               <br />
               <span className="text-[#D4AF37]" style={{ fontFamily: 'Vazirmatn, serif', fontWeight: 400 }}>ساخته شده با اشتیاق</span>
             </h1>
@@ -65,7 +65,7 @@ export default function Home() {
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/How to Choose the Best Central American Coffee Beans for Your Palate.jpeg"
-                  alt="دانه‌های قهوه ممتاز"
+                  alt="دانه‌های قهوه DN Coffee"
                   fill
                   className="object-cover"
                 />
@@ -89,7 +89,7 @@ export default function Home() {
                     <h3 className="text-xl font-bold text-white" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>برشته شده در سوئد</h3>
                   </div>
                   <p className="text-white/80 leading-relaxed" style={{ paddingLeft: '8px', paddingRight: '12px', fontFamily: 'Vazirmatn, sans-serif' }}>
-                    دانه‌های قهوه ممتاز ما با دقت در سوئد و با استفاده از تکنیک‌های سنتی اسکاندیناوی برشته می‌شوند. این فرآیند دقیق طعم‌ها و عطرهای منحصر به فردی را نمایان می‌کند و پایه‌ای کامل برای قهوه استثنایی ایجاد می‌کند.
+                    دانه‌های قهوه DN Coffee ما با دقت در سوئد و با استفاده از تکنیک‌های سنتی اسکاندیناوی برشته می‌شوند. این فرآیند دقیق طعم‌ها و عطرهای منحصر به فردی را نمایان می‌کند و پایه‌ای کامل برای قهوه استثنایی ایجاد می‌کند.
                   </p>
                 </div>
 
@@ -291,7 +291,7 @@ export default function Home() {
                 role: 'متخصص قهوه',
                 image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&q=80',
                 rating: 5,
-                text: 'ترکیب بی‌نظیر سنت و کیفیت. هر جرعه داستانی از استادی را روایت می‌کند. این همان چیزی است که قهوه ممتاز باید مزه بدهد.',
+                text: 'ترکیب بی‌نظیر سنت و کیفیت. هر جرعه داستانی از استادی را روایت می‌کند. این همان چیزی است که قهوه DN Coffee باید مزه بدهد.',
                 location: 'تهران، ایران'
               }
             ].map((testimonial, index) => (
@@ -411,7 +411,7 @@ export default function Home() {
               </h3>
               
               <p className="text-white/70 leading-relaxed text-xs md:text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif', marginBottom: '32px' }}>
-                تجربه قهوه ممتاز. برشته شده در سوئد، دم‌آوری شده در تهران.
+                تجربه قهوه DN Coffee. برشته شده در سوئد، دم‌آوری شده در تهران.
               </p>
 
               {/* Social Media */}

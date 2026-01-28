@@ -26,7 +26,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "D/N Coffee - قهوه روز و شب",
-  description: "تجربه قهوه ممتاز برای هر لحظه",
+  description: "تجربه قهوه DN Coffee برای هر لحظه",
   icons: {
     icon: '/images/lll.JPG',
     shortcut: '/images/lll.JPG',
