@@ -11,46 +11,84 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center pt-24 pb-20 bg-gradient-to-br from-[#2C3038] via-[#1e2329] to-[#1a1f2e]">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center space-y-12">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 text-sm text-[#D4AF37] font-medium" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
-              <span>🇸🇪</span>
+      <section id="home" className="relative min-h-screen flex items-center justify-center pt-24 pb-20 overflow-hidden">
+        {/* Animated Background */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#2C3038] via-[#1e2329] to-[#1a1f2e]"></div>
+          {/* Animated Gradient Orbs */}
+          <div className="absolute top-20 right-20 w-96 h-96 bg-[#D4AF37]/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 left-20 w-96 h-96 bg-[#8B6F47]/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#D4AF37]/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        </div>
+
+        <div className="container-custom relative z-10">
+          <div className="max-w-5xl mx-auto text-center space-y-8 md:space-y-12">
+            {/* Badge - Enhanced */}
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-full text-sm text-[#D4AF37] font-semibold shadow-lg" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+              <span className="text-xl">🇸🇪</span>
               <span>برشته شده در سوئد</span>
               <span className="text-white/30">•</span>
-              <span>☕</span>
+              <span className="text-xl">☕</span>
               <span>دم‌آوری شده در تهران</span>
             </div>
 
-            {/* Main Heading */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight" style={{ fontFamily: 'Vazirmatn, serif' }}>
-              قهوه <span className="text-[#D4AF37]">DN Coffee</span>
-              <br />
-              <span className="text-[#D4AF37]" style={{ fontFamily: 'Vazirmatn, serif', fontWeight: 400 }}>ساخته شده با اشتیاق</span>
-            </h1>
+            {/* Main Heading - Enhanced */}
+            <div className="space-y-4">
+              <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-white leading-tight" style={{ fontFamily: 'Vazirmatn, serif' }}>
+                <span className="block mb-2">قهوه</span>
+                <span className="text-[#D4AF37] block">DN Coffee</span>
+              </h1>
+              <p className="text-2xl md:text-3xl lg:text-4xl text-[#D4AF37]/90 font-light" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                ساخته شده با اشتیاق
+              </p>
+            </div>
 
-            {/* Description */}
-            <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+            {/* Description - Enhanced */}
+            <p className="text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mx-auto px-4" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
               تجربه ترکیب بی‌نظیر برشته‌کاری سوئدی و هنر دم‌آوری ایرانی
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+            {/* Decorative Line */}
+            <div className="flex items-center justify-center gap-3 py-4">
+              <div className="h-px w-20 bg-gradient-to-l from-transparent via-[#D4AF37]/50 to-[#D4AF37]"></div>
+              <div className="w-2 h-2 rounded-full bg-[#D4AF37]"></div>
+              <div className="h-px w-20 bg-gradient-to-r from-[#D4AF37] via-[#D4AF37]/50 to-transparent"></div>
+            </div>
+
+            {/* CTA Buttons - Enhanced */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
               <a 
                 href="#menu" 
-                className="px-6 py-2.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] text-white rounded-lg font-semibold text-sm hover:from-[#D4AF37] hover:to-[#8B6F47] transition-all duration-300 shadow-lg"
+                className="group relative px-8 py-3.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] text-white rounded-xl font-semibold text-sm hover:from-[#D4AF37] hover:to-[#8B6F47] transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#D4AF37]/30 hover:scale-105 overflow-hidden"
                 style={{ fontFamily: 'Vazirmatn, sans-serif' }}
               >
-                مشاهده منو
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  <span>مشاهده منو</span>
+                  <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37] to-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <a 
                 href="#about" 
-                className="px-6 py-2.5 border-2 border-white/30 text-white rounded-lg font-semibold text-sm hover:bg-white/10 hover:border-white/50 transition-all duration-300"
+                className="group px-8 py-3.5 border-2 border-white/30 text-white rounded-xl font-semibold text-sm hover:bg-white/10 hover:border-[#D4AF37]/50 hover:scale-105 transition-all duration-300 backdrop-blur-sm"
                 style={{ fontFamily: 'Vazirmatn, sans-serif' }}
               >
-                داستان ما
+                <span className="flex items-center justify-center gap-2">
+                  <span>داستان ما</span>
+                  <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </span>
               </a>
+            </div>
+
+            {/* Scroll Indicator */}
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+              <svg className="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
             </div>
           </div>
         </div>
@@ -552,7 +590,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">📞</span>
-                  <a href="tel:+989027380949" className="hover:text-white transition-colors">+98 902 738 0949</a>
+                  <a href="tel:+989027380949" className="hover:text-white transition-colors" dir="ltr">+98 902 738 0949</a>
                 </li>
                 <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">💬</span>

@@ -164,7 +164,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-white/60 text-xs mb-1.5 font-medium" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>تلفن</p>
-                    <a href="tel:+989027380949" className="text-white font-semibold text-base hover:text-[#D4AF37] transition-colors block" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
+                    <a href="tel:+989027380949" className="text-white font-semibold text-base hover:text-[#D4AF37] transition-colors block" style={{ fontFamily: 'Vazirmatn, sans-serif' }} dir="ltr">
                       +98 902 738 0949
                     </a>
                   </div>
@@ -425,7 +425,7 @@ export default function ContactPage() {
                   تهران، ایران
                 </li>
                 <li className="text-white/70 text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
-                  <a href="tel:+989027380949" className="hover:text-white transition-colors">+98 902 738 0949</a>
+                  <a href="tel:+989027380949" className="hover:text-white transition-colors" dir="ltr">+98 902 738 0949</a>
                 </li>
                 <li className="text-white/70 text-sm" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <a href="https://wa.me/989027380949" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">در واتساپ</a>

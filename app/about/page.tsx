@@ -339,7 +339,7 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">📞</span>
-                  <a href="tel:+989027380949" className="hover:text-white transition-colors">+98 902 738 0949</a>
+                  <a href="tel:+989027380949" className="hover:text-white transition-colors" dir="ltr">+98 902 738 0949</a>
                 </li>
                 <li className="flex items-start gap-3 text-white/70" style={{ fontFamily: 'Vazirmatn, sans-serif' }}>
                   <span className="text-[#8B6F47] mt-1">💬</span>
