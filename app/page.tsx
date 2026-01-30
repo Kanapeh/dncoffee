@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import Header from './components/Header';
 import BottomNav from './components/BottomNav';
 
@@ -57,8 +58,8 @@ export default function Home() {
 
             {/* CTA Buttons - Enhanced */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-              <a 
-                href="#menu" 
+              <Link 
+                href="/menu" 
                 className="group relative px-8 py-3.5 bg-gradient-to-r from-[#8B6F47] to-[#D4AF37] text-white rounded-xl font-semibold text-sm hover:from-[#D4AF37] hover:to-[#8B6F47] transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#D4AF37]/30 hover:scale-105 overflow-hidden"
                 style={{ fontFamily: 'Vazirmatn, sans-serif' }}
               >
@@ -69,7 +70,7 @@ export default function Home() {
                   </svg>
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37] to-[#8B6F47] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </a>
+              </Link>
               <a 
                 href="#about" 
                 className="group px-8 py-3.5 border-2 border-white/30 text-white rounded-xl font-semibold text-sm hover:bg-white/10 hover:border-[#D4AF37]/50 hover:scale-105 transition-all duration-300 backdrop-blur-sm"

@@ -34,7 +34,7 @@ export default function Header() {
   const navItems = [
     { name: 'Home', href: '/', icon: '🏠' },
     { name: 'About', href: '/about', icon: '📖' },
-    { name: 'Menu', href: '/#menu', icon: '☕' },
+    { name: 'Menu', href: '/menu', icon: '☕' },
     { name: 'Blog', href: '/blog', icon: '📝' },
     { name: 'Process', href: '/#process', icon: '🔥' },
     { name: 'Contact', href: '/contact', icon: '📞' },

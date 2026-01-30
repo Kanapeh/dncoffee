@@ -46,7 +46,7 @@ export default function BottomNav() {
       )
     },
     { 
-      href: '/#menu', 
+      href: '/menu', 
       label: 'Menu',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,6 +89,11 @@ export default function BottomNav() {
     // For blog pages - must check first before other pages
     if (href === '/blog') {
       return pathname.startsWith('/blog');
+    }
+    
+    // For menu pages
+    if (href === '/menu') {
+      return pathname.startsWith('/menu');
     }
     
     // For about pages
